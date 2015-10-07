@@ -142,7 +142,17 @@ Virtual Box VM, it maintains its configuration between uses.
     by a highlighted area or a `|` that appears in the command line. After
     typing a command, always press RETURN.
 
-4. Type the `docker run hello-world` command and press RETURN.
+4. Configure your command line to point to your Docker machine
+   
+   1. Type the `docker-machine env default` command and press RETURN.
+   2. This will generate some output. The last two lines of output should look like this:
+   
+ 	# Run this command to configure your shell: 
+	# eval "$(docker-machine env default)"
+
+   3. Type the `eval "$(docker-machine env default)"` command and press RETURN. 
+
+5. Type the `docker run hello-world` command and press RETURN.
 
     The command does some work for you, if everything runs well, the command's
     output looks like this:
