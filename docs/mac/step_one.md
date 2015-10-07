@@ -147,9 +147,11 @@ Virtual Box VM, it maintains its configuration between uses.
    1. Type the `docker-machine env default` command and press RETURN.
    2. This will generate some output. The last two lines of output should look like this:
    
- 	# Run this command to configure your shell: 
-	# eval "$(docker-machine env default)"
-
+        ```
+	# Run this command to configure your shell: 
+        # eval "$(docker-machine env default)"
+        ```
+   
    3. Type the `eval "$(docker-machine env default)"` command and press RETURN. 
 
 5. Type the `docker run hello-world` command and press RETURN.
